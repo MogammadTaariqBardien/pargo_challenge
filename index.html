@@ -4,9 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pargo Challenge/Home Page</title>
+    <title>Mogammad Taariq Bardien | Portfolio</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/functions.js">
+    </script>
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <style>
+        .hero{
+            background-image: url(./img/lady.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-    
+    <section class="colorNav">
+            <nav class="navbar is-success">
+                    <div class="container">
+                            <div class="navbar-item" id="logos">
+                            <img src="./img/logo.svg" alt="" srcset=""><p>Parcels on the go!</p>
+                            </div>
+                            <span class="navbar-burger burger" data-target="navMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="navbar-menu" id="navMenu">
+                            <div class="navbar-end">
+                                <a href="#" class="navbar-item" id="login">Login</a>
+                                <a href="#" class="navbar-item" id="track">Track</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+    </section>
+    <section class="hero is-fullheight" id="size">
+        <div class="hero-body">
+            <div class="container" id="move">
+                <h1 class="title">
+                        The leading <b>click and collect</b> and <b>returns</b> logistics solution for your business
+                </h1>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section" id="first">
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">IM A BUSINESS</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">IM A SHOPPER</button>
+        </div>
+
+        <hr id="split">
+        <!-- Tab content -->
+        <div id="London" class="tabcontent">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam natus aliquid vitae repellat, quod sequi pariatur qui inventore esse quo dolor culpa ex deleniti, velit libero dolorem, voluptatem totam expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dignissimos necessitatibus quis exercitationem optio provident cum? Non neque, assumenda alias et esse totam reprehenderit atque maiores beatae hic, iste molestias?</p> 
+        </div>
+        
+        <div id="Paris" class="tabcontent">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequuntur ab laborum nobis harum neque facilis. Vel repudiandae dicta, odio fugiat repellat eaque nam, asperiores quod illum dolorem sunt nihil. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque similique sapiente nostrum earum rem asperiores quod cupiditate! Tempore aspernatur quod necessitatibus sequi nostrum dolores cum enim quo autem, quae maiores.</p> 
+        </div>
+
+    </section> 
+    </section>
+
+    </section>
+    <!-- Script to make the navbar clickable and responsive -->
+    <script>
+        (function() {
+            var burger = document.querySelector('.burger');
+            var nav = document.querySelector('#' +burger.dataset.target);
+
+            burger.addEventListener('click', function(){
+                burger.classList.toggle('is-active');
+                nav.classList.toggle('is-active');
+            });
+        })();
+    </script>
+    <!-- End of Script to make the navbar clickable and responsive -->
 </body>
 </html>
